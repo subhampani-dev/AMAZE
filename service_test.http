@@ -1,0 +1,27 @@
+get http://localhost:4004/odata/v4/amaze-srv/MASTER_DATA
+
+###
+
+get http://localhost:4004/odata/v4/amaze-srv/PRODUCT_DATA
+
+###
+
+get http://localhost:4004/odata/v4/amaze-srv/ORDER_DATA
+
+###
+
+post http://localhost:4004/odata/v4/amaze-srv/MASTER_DATA
+content-type: application/json
+
+{
+      "createdAt": null,
+      "createdBy": null,
+      "modifiedAt": null,
+      "modifiedBy": null,
+      "CUST_ID": 13,
+      "CUST_NAME": "Johnson",
+      "CUST_CONTACT": "+13-23643746",
+      "CUST_ADDRESS": "Ohio",
+      "CUST_EMAIL_ID": "johnson.samuels@gmail.com",
+      "CUST_PASSWORD": "Qwerty@123"
+    }

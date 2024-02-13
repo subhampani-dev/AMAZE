@@ -2,12 +2,11 @@ namespace db.AMAZE;
 
 using
 {
-    cuid,
     managed
 }
 from '@sap/cds/common';
 
-entity TB_DATA_MASTER
+entity TB_DATA_MASTER:managed
 {
     key CUST_ID : Integer;
     CUST_NAME : String(100);
